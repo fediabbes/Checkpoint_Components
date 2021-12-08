@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './Component/Profile/style.css'
+import Abb from './Component/Profile/ProfilePhoto.js'
+import Abb2 from './Component/Profile/FullName.js'
+import Abb3 from './Component/Profile/Address';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Abb />
+      <div className ='nameadd'>
+      <Abb2 />
+      <Abb3 />
+
+      </div>
+     
+
     </div>
   );
 }
